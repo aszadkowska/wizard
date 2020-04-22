@@ -1,3 +1,8 @@
+##Technical requirements
+
+```php
+"php" : "^7.2"
+```
 
 ## Install
 
