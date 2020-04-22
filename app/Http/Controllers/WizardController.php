@@ -27,7 +27,7 @@ class WizardController extends Controller
 
     public function index()
     {
-        return view('com');
+        return view('wizard');
     }
 
     public function step1(Request $request): array

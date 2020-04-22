@@ -1,7 +1,7 @@
 <template>
     <div class="panel panel-default">
         <div class="panel-body">
-            <form action="./com" method="POST" @submit.prevent="getData()">
+            <form action="./step1" method="POST" @submit.prevent="getData()">
                 <div class="form-group">
                     <label for="province">Wybierz województwo</label>
                     <select class="form-control" id="province" v-model="form.province" required>
@@ -49,7 +49,7 @@
         },
         methods: {
             getData() {
-                axios.post("./com", this.form).then(response => {
+                axios.post("./step1", this.form).then(response => {
                     this.$emit('site-details', {step: '2', data: response.data});
                 });
             },

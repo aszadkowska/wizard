@@ -15,11 +15,10 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/com', 'WizardController@index');
-Route::post('/com', 'WizardController@step1');
+Route::get('/', 'WizardController@index');
+Route::post('/step1', 'WizardController@step1');
 Route::post('/step2', 'WizardController@step2');
 Route::get('/uuid', 'WizardController@step2');
-Route::get('/site', 'WizardController@save');
 
 Auth::routes();
 

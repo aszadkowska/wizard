@@ -2001,7 +2001,7 @@ __webpack_require__.r(__webpack_exports__);
     getData: function getData() {
       var _this = this;
 
-      axios.post("./com", this.form).then(function (response) {
+      axios.post("./step1", this.form).then(function (response) {
         _this.$emit('site-details', {
           step: '2',
           data: response.data
@@ -37853,7 +37853,7 @@ var render = function() {
       _c(
         "form",
         {
-          attrs: { action: "./com", method: "POST" },
+          attrs: { action: "./step1", method: "POST" },
           on: {
             submit: function($event) {
               $event.preventDefault()
@@ -38072,7 +38072,7 @@ var render = function() {
         },
         [
           _vm._l(10, function(n, i) {
-            return _c("div", [
+            return _c("div", { staticClass: "form-group m-sm-3" }, [
               _c(
                 "select",
                 {

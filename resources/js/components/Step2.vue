@@ -3,7 +3,7 @@
         <div class="panel-heading">Wybierz litery</div>
         <div class="panel-body">
             <form class="form-group" action="./step2" method="POST" @submit.prevent="getData()">
-                <div v-for="(n, i) in 10">
+                <div v-for="(n, i) in 10" class="form-group m-sm-3">
                     <select v-model="UUID.id[i]" required>
                         <option v-for="letter in data[0]">{{letter}}</option>
                     </select>
