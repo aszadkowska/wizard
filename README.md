@@ -1,7 +1,7 @@
-##Technical requirements
+## Technical requirements
 
 ```php
-"php" : "^7.2"
+php : ^7.2
 ```
 
 ## Install
